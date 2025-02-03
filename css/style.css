@@ -45,3 +45,12 @@
 .input-group-append {
     cursor: pointer;
   }
+
+  .dropdown {
+    position: relative;
+    display: block;
+  }
+
+  ul {
+    display: block;
+  }

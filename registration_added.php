@@ -1,36 +1,26 @@
 <?php
 
-  session_start();
+	session_start();
 	
-	if(!isset($_SESSION['user_logged']))
-	{
-		header ('Location: index.php');
-		exit();
-  }
-	
-	if (!isset($_SESSION['incomes_added']))
-	{
-		header('Location: home.php');
+	if (!isset($_SESSION['registration_good'])){
+		
+		header('Location: index.php');
 		exit();
 	}
 	else
 	{
-		unset($_SESSION['incomes_added']);
-		
+		unset($_SESSION['registration_good']);
 	}
-
-	//remove form variables
-	if (isset($_SESSION['form_income_amount'])) unset($_SESSION['form_income_amount']);
-	if (isset($_SESSION['form_income_date'])) unset($_SESSION['form_income_date']);
-	if (isset($_SESSION['form_income_category'])) unset($_SESSION['form_income_category']);
-	if (isset($_SESSION['form_income_comment'])) unset($_SESSION['form_income_comment']);
 	
-	//remove signup fails
-	if (isset($_SESSION['error_income_amount'])) unset($_SESSION['error_income_amount']);
-	if (isset($_SESSION['error_income_date'])) unset($_SESSION['error_income_date']);
-	if (isset($_SESSION['error_income_category'])) unset($_SESSION['error_income_category']);
-	if (isset($_SESSION['error_income_comment'])) unset($_SESSION['error_income_comment']);
+	// Delete variables that remember values ​​entered into the form
+	if (isset($_SESSION['form_login'])) unset($_SESSION['form_login']);
+	if (isset($_SESSION['form_email'])) unset($_SESSION['form_email']);
+	if (isset($_SESSION['form_password'])) unset($_SESSION['form_password']);
 	
+	// Delete registration errors
+	if (isset($_SESSION['error_login'])) unset($_SESSION['error_login']);
+	if (isset($_SESSION['error_email'])) unset($_SESSION['error_email']);
+	if (isset($_SESSION['error_password'])) unset($_SESSION['error_password']);
 ?>
 
 <!DOCTYPE html>

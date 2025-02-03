@@ -1,5 +1,7 @@
 # Budget App
 
+This application will help you manage your budget.
+
 # Project Name
 - This application will help you manage your budget. You can add expenses, revenues and check the balance for any period on an  ongoing basis. Registration and subsequent logging in at any time will allow you to conveniently access your data. I keep my fingers crossed that the balance will always be positive :)
 
@@ -32,6 +34,8 @@ List the ready features here:
 ## Screenshots
 ![Example - Desktop Design](./screenshots/desktop-design-1.png)
 ![Example - Desktop Design](./screenshots/desktop-design-2.png)
+![Example - Desktop Design](./screenshots/desktop-design-3.png)
+![Example - Desktop Design](./screenshots/desktop-design-4.png)
 ![Example - Mobile Design](./screenshots/mobile-design-1.png)
 ![Example - Mobile Design](./screenshots/mobile-design-2.png)
 ![Example - Mobile Design](./screenshots/mobile-design-3.png)
